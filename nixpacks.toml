@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ['nodejs', 'pnpm']
+
+[start]
+cmd = 'pnpm run start'

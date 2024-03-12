@@ -1,0 +1,26 @@
+{
+  "name": "@moveo/assignment-root",
+  "author": "Ofir Helman <helman.ofir@gmail.com>",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "20.11.26",
+    "typescript": "^5.4.2",
+    "concurrently": "^7.0.0",
+    "wsrun": "^5.2.4"
+  },
+  "engines": {
+    "pnpm": "8.15.4",
+    "node": "20.11.1"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "concurrently -n @moveo/assignment-frontend,@moveo/assignment-backend -c magenta,cyan \"pnpm --filter @moveo/assignment-frontend start\" \"pnpm --filter @moveo/assignment-backend start\"",
+    "build": "wsrun build",
+    "clean": "wsrun clean"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
