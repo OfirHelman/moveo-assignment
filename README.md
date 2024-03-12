@@ -16,7 +16,7 @@ Users can join as either mentors or students, with mentors having read-only acce
    pnpm install
 
 2. Start the development:
-   pnpm run dev
+   pnpm run start
 
 3. Open your web browser and go to http://localhost:3000 to view the application.
 
