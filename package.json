@@ -15,7 +15,7 @@
   },
   "packageManager": "pnpm@8.15.4",
   "scripts": {
-    "start": "concurrently -n @moveo/assignment-frontend,@moveo/assignment-backend -c magenta,cyan \"pnpm --filter @moveo/assignment-frontend start\" \"pnpm --filter @moveo/assignment-backend start\""
+    "start": "concurrently -n @moveo/assignment-frontend,@moveo/assignment-backend -c magenta,cyan \"pnpm --filter @moveo/assignment-frontend start --max_old_space_size=4096\" \"pnpm --filter @moveo/assignment-backend start\""
   },
   "workspaces": [
     "packages/*"
